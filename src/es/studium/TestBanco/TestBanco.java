@@ -17,7 +17,7 @@ public class TestBanco {
 	private static final String MONEDA = " euros.";
 	private static final String TIENE = " tiene ";
 	private static final String CUENTA_DE = "La cuenta de ";
-
+	
 	public static void main(String[] args) {
 		/* Antonio y Beatriz se hacen cliente del banco */
 		Cliente antonio = new Cliente("123456789Z", "Antonio Alonso", "Av. Pueblo Saharaui, s/n");

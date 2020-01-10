@@ -1,59 +1,84 @@
 package es.studium.Banco;
 
-public class Cliente
-{
+/**
+ * Con esta clase podemos crear nuevos clientes en nuestro banco
+ * 
+ * @author David.Info Práctica Tema 2 Entorno y Desarrollo
+ * @version 1.0.0
+ */
+public class Cliente {
 	private String nombre;
 	private String dni;
 	private String direccion;
 
+	public Cliente() {
 
-	public Cliente()
-		{
+		nombre = "";
+		dni = "";
+		direccion = "";
 
-			nombre = "";
-			dni = "";
-			direccion = "";
+	}
 
-		}
+	/**
+	 * 
+	 * @param d   Hace referencia al dni del cliente
+	 * @param nom Hace referencia al nombre del cliente
+	 * @param dir Hace referencia a la dirección del cliente
+	 */
+	public Cliente(String d, String nom, String dir) {
 
-	public Cliente(String d, String nom, String dir)
-		{
-		   
-			dni = d;
-			nombre = nom;
-			direccion = dir;
+		dni = d;
+		nombre = nom;
+		direccion = dir;
 
-		}
+	}
 
-	public String getNombre()
-		{
-			return nombre;
-		}
+	/**
+	 * 
+	 * @return Nos devuelve el nombre del cliente
+	 */
+	public String getNombre() {
+		return nombre;
+	}
 
-	public void setNombre(String nom)
-		{
-			nombre = nom;
-		}
+	/**
+	 * 
+	 * @param nom Nos permite modificar un nuevo nombre de cliente
+	 */
+	public void setNombre(String nom) {
+		nombre = nom;
+	}
 
-	public String getDni()
-		{
-			return dni;
-		}
+	/**
+	 * 
+	 * @return Nos devuelve el dni del cliente
+	 */
+	public String getDni() {
+		return dni;
+	}
 
-	public void setDni(String d)
-		{
-			dni = d;
-		}
+	/**
+	 * 
+	 * @param d Nos permite modificar un dni de cliente
+	 */
+	public void setDni(String d) {
+		dni = d;
+	}
 
-	public String getDireccion()
-		{
-			return direccion;
-		}
+	/**
+	 * 
+	 * @return Nos devuelve el nombre la dirección del cliente
+	 */
+	public String getDireccion() {
+		return direccion;
+	}
 
-	public void setDireccion(String dir)
-		{
-			direccion = dir;
-		}
-
+	/**
+	 * 
+	 * @param dir Nos permite modificar la dirección
+	 */
+	public void setDireccion(String dir) {
+		direccion = dir;
+	}
 
 }
